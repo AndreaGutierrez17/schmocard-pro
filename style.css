@@ -120,3 +120,34 @@ footer .bi:hover{opacity:1}
 
 .needs-validation .form-control:invalid { border-color:#dc3545; }
 .needs-validation .form-control:valid   { border-color:#198754; }
+
+/* Ajustes hero en móviles */
+@media (max-width: 575.98px) {
+  .hero-mascot img {
+    max-width: 220px;   /* más pequeño para pantallas chicas */
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero .display-4 {
+    font-size: 1.8rem;  /* título más compacto */
+    line-height: 1.2;
+  }
+
+  .hero .lead {
+    font-size: 1rem;    /* texto más legible en móvil */
+  }
+}
+
+/* Evitar que los bombones se encimen en móviles */
+@media (max-width: 575.98px) {
+  .product-card {
+    margin-bottom: 2.5rem; /* más espacio entre tarjetas */
+    padding-top: 90px;     /* deja más espacio para el bombón */
+  }
+
+  .product-card .mascot {
+    top: -70px;    /* que no se corte */
+    width: 80px;   /* más pequeños en móvil */
+  }
+}

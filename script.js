@@ -14,3 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 500); // ⏱️ cambia cada medio segundo
 });
 
+// Cerrar menú en móviles al hacer clic en un enlace
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const bsCollapse = document.querySelector('.navbar-collapse');
+    if (bsCollapse.classList.contains('show')) {
+      new bootstrap.Collapse(bsCollapse).toggle();
+    }
+  });
+});
+
+
